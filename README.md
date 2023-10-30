@@ -1,8 +1,10 @@
 # Fuck-discord-auto-update
 
+**English** | [简体中文](./README_zh.md)
+
 No more waiting for Discord to check for updates - start it **RIGHT AWAY**!
 
-Tested version(s): `1.0.9021`
+Tested version(s): `1.0.9021` (Windows)
 
 ## Step 1 - Replace shortcuts / links
 

@@ -108,6 +108,16 @@ async function updateUntilCurrent() {
     skip_host_delta: false,
     skip_module_delta: {}
   };
+
+  // HACK
+  await newUpdater.startCurrentVersion();
+  newUpdater.setRunningInBackground();
+  newUpdater.collectGarbage();
+  launchMainWindow();
+  updateBackoff.succeed();
+  updateSplashState(LAUNCHING);
+  return;
+
   while (true) {
     updateSplashState(CHECKING_FOR_UPDATES);
     try {
@@ -159,7 +169,14 @@ function initOldUpdater() {
   modulesListeners = {};
   addModulesListener(CHECKING_FOR_UPDATES, () => {
     console.log(`splashScreen: ${CHECKING_FOR_UPDATES}`);
-    startUpdateTimeout();
+
+    // HACK
+    console.log("Skipping update check for you...");
+    moduleUpdater.setInBackground();
+    launchMainWindow();
+    updateSplashState(LAUNCHING);
+
+    // startUpdateTimeout();
     updateSplashState(CHECKING_FOR_UPDATES);
   });
   addModulesListener(UPDATE_CHECK_FINISHED, ({

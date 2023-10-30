@@ -110,3 +110,7 @@ If you found an `Update.exe` or some executable like that under the installation
 ## Step 4 - Enjoy 🎉
 
 That's it! Now you can launch Discord lightning fast, without having to wait for update checks.
+
+## Epilogue
+
+If this project helped you, feel free to give me a Star ⭐️. It's not only a recognition for me, but also helps more people to discover this project and to save them the trouble of waiting for update checks.

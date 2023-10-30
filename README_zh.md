@@ -27,7 +27,7 @@
     - 如果您没有安装 Node 并且不想安装它，可以从 [此仓库](https://github.com/async3619/asar-exec/releases) 下载预编译的独立 asar 工具。
     - 示例命令（在 Windows 上）：`.\asar.exe e .\app.asar discord`
 - 修改解包后的文件夹中的 `app_bootstrap/splashScreen.js` 文件。
-    - 如果您更喜欢通过查看 diff 来完成此步骤，可以查看提交 77f6660d2441c7cd343f5f35f0ea79bcf4a56265 并跳过以下子步骤。
+    - 如果您更喜欢通过查看 diff 来完成此步骤，可以查看提交 [`77f6660`](https://github.com/PRO-2684/Fuck-discord-auto-update/commit/77f6660d2441c7cd343f5f35f0ea79bcf4a56265) 并跳过以下子步骤。
     - 将原先的：
 
         ```js

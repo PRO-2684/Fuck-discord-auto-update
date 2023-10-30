@@ -27,7 +27,7 @@ If you found an `Update.exe` or some executable like that under the installation
     - If you don't have Node installed and don't want to install it, you can download a pre-compiled standalone asar tool from [this repo](https://github.com/async3619/asar-exec/releases).
     - Example command (on Windows): `.\asar.exe e .\app.asar discord`
 - Modify the unpacked folder's `app_bootstrap/splashScreen.js` file.
-    - If you prefer viewing diff to accompish this step, you may checkout commit 77f6660d2441c7cd343f5f35f0ea79bcf4a56265 and omit the following sub-steps.
+    - If you prefer viewing diff to accompish this step, you may checkout commit [`77f6660`](https://github.com/PRO-2684/Fuck-discord-auto-update/commit/77f6660d2441c7cd343f5f35f0ea79bcf4a56265) and omit the following sub-steps.
     - Find the following code:
 
         ```js
